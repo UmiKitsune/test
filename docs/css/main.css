@@ -1,24 +1,38 @@
-.header{
-    padding: 50px 100px;
+
+.main, .header, footer{
+    width: 100%;
+    margin: 0;
     text-align: center;
-    background: #999;
-    font-size: 32px;
-    font-family: sans-serif;
+    font-size: 30px;
 }
-.main {
-    background: rgb(133, 233, 133);
-    padding: 100px;
-    font-size: 38px;
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
+.blue {
+    background: #7c8bc6;
+    height: 50px;
 }
 
-.footer {
-    background: rgb(64, 71, 64);
-    padding: 50px 100px;
-    font-size: 32px;
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
+.yellow {
+    background: #ffed81;
+    height: 50px;
+}
+
+.green {
+    background: #b6d884;
+    height: 50px;
+}
+.lightblue {
+    background: #6acbde;
+    height: 50px;
+}
+.purple {
+    background: #9977b4;
+    height: 50px;
+}
+
+.red {
+    background: #f69c9a;
+    height: 49px;
+}
+.orange {
+    background: #fecd7e;
+    height: 50px;
 }
