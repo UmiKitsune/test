@@ -13,3 +13,12 @@
     font-family: sans-serif;
     text-align: center;
 }
+
+.footer {
+    background: rgb(64, 71, 64);
+    padding: 50px 100px;
+    font-size: 32px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+}
