@@ -1,3 +1,3 @@
-document.onload = function() {
+window.onload = function() {
     alert("test");
 };
