@@ -1,14 +1,18 @@
-.header {
+.main {
     width: 100%;
     margin: 0;
     text-align: center;
     font-size: 30px;
 }
-.red {
-    background: #f69c9a;
+.yellow {
+    background: #ffed81;
     height: 50px;
 }
-.orange {
-    background: #fecd7e;
+.green {
+    background: #b6d884;
+    height: 50px;
+}
+.lightblue {
+    background: #6acbde;
     height: 50px;
 }
