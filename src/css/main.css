@@ -4,4 +4,12 @@
     background: #999;
     font-size: 32px;
     font-family: sans-serif;
+
+.main {
+    background: rgb(133, 233, 133);
+    padding: 100px;
+    font-size: 38px;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
 }
