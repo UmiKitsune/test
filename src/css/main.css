@@ -1,24 +1,23 @@
-.header{
-    padding: 50px 100px;
-    text-align: center;
-    background: #999;
-    font-size: 32px;
-    font-family: sans-serif;
-}
+.header {
+  padding: 50px 100px;
+  text-align: center;
+  background: #b65b98;
+  font-size: 32px;
+  font-family: sans-serif;
+  color: #0fc2e2; }
+
 .main {
-    background: rgb(133, 233, 133);
-    padding: 100px;
-    font-size: 38px;
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
-}
+  background: #33c533;
+  padding: 100px;
+  font-size: 38px;
+  color: #0fc2e2;
+  font-family: sans-serif;
+  text-align: center; }
 
 .footer {
-    background: rgb(64, 71, 64);
-    padding: 50px 100px;
-    font-size: 32px;
-    color: #fff;
-    font-family: sans-serif;
-    text-align: center;
-}
+  background: #e6a732;
+  padding: 50px 100px;
+  font-size: 32px;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center; }

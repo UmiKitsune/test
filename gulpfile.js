@@ -1,7 +1,17 @@
 const gulp = require('gulp');
 const browserSync = require("browser-sync");
-const watch = require('gulp-watch');
+const sass = require("gulp-sass");
 
+//Gulp Task для компиляции Scss в css
+gulp.task('scss', function() {
+    return gulp.src('./src/scss/main.scss')
+        .pipe( sass() )
+        .pipe( gulp.dest("./src/css") )
+        .pipe(browserSync.reload({stream: true}));
+
+});
+
+//локальный сервер
 gulp.task('server', function() {
     browserSync.init({
         server: {
@@ -10,11 +20,17 @@ gulp.task('server', function() {
     });
 });
 
+//следим за изменениями в файлах и обновляем браузер
 gulp.task('watch', function() {
-    watch("./src/*.html", ['src:html']);
+    gulp.watch(["./src/*.html", "./src/js/*.js", "./src/img/*.*"]).on('change', browserSync.reload);
+
+    gulp.watch('./src/scss/**/*.scss', function(){
+        setTimeout(gulp.parallel("scss"), 1000);
+    });
 });
 
-gulp.task('default', gulp.parallel('server', 'watch'));
+//дефолтный таск = пишем в терминале gulp и запускаются переданые таски то есть server and watch == gulp.task('default', gulp.parallel('server', 'watch'));  а потом добавили scss
+gulp.task('default', gulp.series('scss', gulp.parallel('server', 'watch')));
 
 
 
