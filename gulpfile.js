@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const browserSync = require("browser-sync");
 const sass = require("gulp-sass");
 
+
 //Gulp Task для компиляции Scss в css
 gulp.task('scss', function() {
     return gulp.src('./src/scss/main.scss')
